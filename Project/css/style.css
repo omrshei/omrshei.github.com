@@ -1,0 +1,198 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s
+}
+
+html {
+    background-color: var(--primary-color);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Droid', sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.show {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.show:before {
+    content: '';
+    background: url(pics/pi.jpeg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.show .show-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.show h1 {
+    font-size: 4rem;
+}
+
+.show p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+img {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+}
+ /* text animation Style */
+
+
+span {
+    font-weight: 700;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(75deg, rgb(0, 0, 0), rgb(255, 40, 40), rgb(5, 5, 5));
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 4s linear infinite;
+    position: relative;
+  }
+  
+@keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+
+/* Contact style */
+
+  
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+*:focus {
+    outline: 0;
+}
+
+body {
+    background-color: rgba(13, 110, 139, 0.75); 
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.even-columns {
+  display: flex;
+  gap: 1em;
+}
+
+.even-columns > * {
+   width: 100%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+
+.container {
+    padding: 12px 24px 24px 24px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+
+label {
+    font-size: 0.85em;
+    margin-left: 12px;
+}
+
+
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+
+input[type=submit] {
+    background: #64B5F6;
+    margin: 0 auto;
+    outline: 0;
+    color: white;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.1s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+input[type=submit]:focus {
+    background: #eaffea;
+    color: rgba(13, 110, 139, 0.75)
+}
+
+input[type=submit]:hover {
+    background: rgba(13, 110, 139, 0.75);
+}
+
+.center {
+    text-align: center;
+}
